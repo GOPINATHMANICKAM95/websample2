@@ -1,0 +1,66 @@
+body{
+  overflow-x: hidden;
+}
+.what,.why,.how{
+  background-color: skyblue;
+  border-radius: 3%;
+}
+.row{
+  padding-top: 2%;
+}
+#footer{
+  text-align: center;
+  color:white;
+}
+.socio
+{
+  width:4%;
+  padding:1% 1%;
+}
+.top:hover
+{
+  background-color: skyblue;
+  transition: 1.5s
+}
+.row{
+  position: relative;
+  overflow: hidden;
+  padding: 1% 1%;
+
+}
+.row:before
+{
+  content: '';
+  position: absolute;
+  width:100%;
+  height:100%;
+  background: rgba(1,1,1,0.7);
+  top:-50%;
+  left:-100%;
+  transform:rotate(45deg);
+  transform-origin: center;
+  z-index: 1;
+  transition: 1s;
+}
+.row:hover::before
+{
+  left:25%;
+}
+.row::after
+{
+  content: '';
+  position: absolute;
+  width:100%;
+  height:100%;
+  background: rgba(1,1,1,0.7);
+  top:-50%;
+  right:-100%;
+  transform:rotate(45deg);
+  transform-origin: center;
+  z-index: 1;
+  transition: 1s;
+}
+.row:hover::after
+{
+  right:25%;
+}
